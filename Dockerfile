@@ -1,4 +1,4 @@
-FROM bitwalker/alpine-elixir-phoenix:1.6.5
+FROM bitwalker/alpine-elixir-phoenix:1.8.1
 
 # Set exposed ports
 EXPOSE 4001
