@@ -1,5 +1,3 @@
-<br \>
-
 <h3><%= dgettext "coherence", "Send reset password link" %></h3>
 
 <%= form_for @changeset, password_path(@conn, :create), [as: :password], fn f  -> %>

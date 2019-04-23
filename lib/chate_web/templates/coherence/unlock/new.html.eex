@@ -1,5 +1,3 @@
-<br \>
-
 <%= form_for @conn, unlock_path(@conn, :create), [as: :unlock], fn f  -> %>
 
   <div class="form-group">
