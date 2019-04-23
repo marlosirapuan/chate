@@ -3,7 +3,7 @@
     <img src="<%= static_path(@conn, "/images/message.png") %>" alt="Chate!" class="img-responsive" width="60" />
   <% end %>  
   <p class="lead">
-    <strong>Chate!</strong> Is my first experience with Phoenix & Elixir. Works but it's just a test : )
+    <strong>Chate!</strong> It's my first experience with Phoenix & Elixir. Works but it's just a test : )
   </p>
 </div>
 
