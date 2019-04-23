@@ -16,3 +16,8 @@ docker-compose run --rm app mix ecto.create
 docker-compose run --rm app mix ecto.migrate
 docker-compose run --rm app mix run priv/repo/seeds.exs
 ```
+
+Build app only
+```
+docker-compose up -d --no-deps --build app
+```
