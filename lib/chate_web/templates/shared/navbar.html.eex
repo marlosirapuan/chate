@@ -10,3 +10,6 @@
 <ul class="nav nav-pills justify-content-center p-3">
   <%= ChateWeb.Coherence.ViewHelpers.coherence_links(@conn, :layout) %>
 </ul>
+
+<p class="alert alert-info" role="alert"><%= get_flash(@conn, :info) %></p>
+<p class="alert alert-danger" role="alert"><%= get_flash(@conn, :error) %></p>
