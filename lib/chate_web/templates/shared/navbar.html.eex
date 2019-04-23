@@ -1,0 +1,12 @@
+<div class="text-center">
+  <%= link to: page_path(@conn, :index), class: "navbar-brand" do %>
+    <img src="<%= static_path(@conn, "/images/message.png") %>" alt="Chate!" class="img-responsive" width="60" />
+  <% end %>  
+  <p class="lead">
+    <strong>Chate!</strong> Is my first experience with Phoenix & Elixir. Works but it's just a test : )
+  </p>
+</div>
+
+<ul class="nav nav-pills justify-content-center p-3">
+  <%= ChateWeb.Coherence.ViewHelpers.coherence_links(@conn, :layout) %>
+</ul>

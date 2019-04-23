@@ -1,0 +1,8 @@
+/* This file is for your main application css. */
+#chat-messages {
+    height: 400px;
+    overflow-y: scroll;
+    background: radial-gradient(farthest-side at 50% 0%, rgba(0, 0, 0, .3), rgba(0, 0, 0, 0)) 100% 0;
+    background-repeat: no-repeat;
+    background-size: 100% 3px;  
+}

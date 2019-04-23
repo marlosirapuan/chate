@@ -1,0 +1,37 @@
+version: '3'
+
+networks:
+  default:
+    driver: bridge
+  webproxy:
+    external: true
+
+services:
+  app:
+    build: .
+    networks:
+      - webproxy
+      - default
+    ports:
+      - 84:4001
+    depends_on:
+      - db
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - VIRTUAL_HOST=chate.hafuk.net
+      - VIRTUAL_PORT=84
+      - MIX_ENV=prod
+    restart: unless-stopped
+
+  db:
+    image: postgres
+    ports:
+      - 5435:5432
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /storage/postgres/chate/data:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${POSTGRES_USER}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
+    restart: unless-stopped    

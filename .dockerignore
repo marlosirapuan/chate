@@ -1,0 +1,20 @@
+# Mix artifacts
+_build
+deps
+*.ez
+assets/node_modules
+test
+
+# Generate on crash by the VM
+erl_crash.dump
+
+# Static artifacts
+node_modules
+
+.git
+.dockerignore
+.byebug_history
+log/*
+logs/*
+tmp/*
+*.log
