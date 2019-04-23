@@ -22,6 +22,9 @@ services:
       - VIRTUAL_HOST=chate.hafuk.net
       - VIRTUAL_PORT=84
       - MIX_ENV=prod
+      - DEFAULT_NAME=${DEFAULT_NAME}
+      - DEFAULT_EMAIL=${DEFAULT_EMAIL}
+      - DEFAULT_PASSWORD=${DEFAULT_PASSWORD}
     restart: unless-stopped
 
   db:
